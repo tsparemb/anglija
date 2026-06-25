@@ -69,6 +69,8 @@
   .nav-list .nm{flex:1;min-width:0}
   .nav-list .nm small{display:block;font-family:'Space Mono';font-size:.62rem;color:#8fa9a5;letter-spacing:.04em}
   .nav-list .nt{font-family:'Space Mono';font-size:.7rem;color:#8fa9a5}
+  .nav-map{margin-top:18px;display:block;text-align:center;font-family:'Space Mono';font-size:.74rem;font-weight:700;letter-spacing:.02em;color:#1a1206;background:var(--ochre);text-decoration:none;padding:11px 14px;border-radius:8px;transition:transform .15s}
+  .nav-map:hover{transform:translateX(2px)}
   .nav-foot{margin-top:auto;padding-top:24px;font-family:'Space Mono';font-size:.62rem;color:#7a9591;letter-spacing:.03em;line-height:1.7}
 
   .mobile-bar{display:none}
@@ -91,6 +93,7 @@
   .hero{
     background:var(--atlantic-deep);color:#eaf2f0;
     padding:64px 56px 56px;position:relative;overflow:hidden;
+    max-width:1140px;
   }
   .hero .ammonite{
     position:absolute;right:-60px;top:50%;transform:translateY(-50%);
@@ -109,7 +112,7 @@
   .hero .log .v small{font-size:.8rem;color:#b9cfca;font-family:'Inter'}
 
   /* ---------- logistics strip ---------- */
-  .logi{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+  .logi{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);max-width:1140px}
   @media(max-width:680px){.logi{grid-template-columns:1fr}}
   .logi .cell{background:var(--paper);padding:22px 26px}
   .logi h3{font-family:'Space Mono';font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--atlantic);margin-bottom:12px;display:flex;align-items:center;gap:8px}
@@ -208,6 +211,7 @@
   <a href="#b5"><span class="dot" style="background:var(--b5)"></span>Jurassic</a>
   <a href="#b6"><span class="dot" style="background:var(--b6)"></span>Cranborne</a>
   <a href="#bookings"><span class="dot" style="background:var(--ochre)"></span>Book ahead</a>
+  <a href="https://www.google.com/maps/d/viewer?mid=1rof09Iicrmo35txF6ZlFPxn81VMNeOs" target="_blank" rel="noopener"><span class="dot" style="background:var(--ochre)"></span>Map ↗</a>
 </div>
 
 <div class="shell">
@@ -223,6 +227,7 @@
       <li><a href="#b6" data-sec="b6"><span class="dot" style="background:var(--b6)"></span><span class="nm">Cranborne<small>28–30 Jul · Cranborne Chase</small></span><span class="nt">2n</span></a></li>
       <li><a href="#bookings" data-sec="bookings"><span class="dot" style="background:var(--ochre)"></span><span class="nm">Book ahead</span></a></li>
     </ul>
+    <a class="nav-map" href="https://www.google.com/maps/d/viewer?mid=1rof09Iicrmo35txF6ZlFPxn81VMNeOs" target="_blank" rel="noopener">⌖ Open route map →</a>
     <div class="nav-foot">
       FLIGHTS · Ryanair E1CH8J<br>
       CAR · keddy GB889550470<br>
@@ -243,7 +248,6 @@
         <div><div class="k">On the ground</div><div class="v">21 <small>nights</small></div></div>
         <div><div class="k">Bases</div><div class="v">6</div></div>
         <div><div class="k">Region driving</div><div class="v">~1,900 <small>km</small></div></div>
-        <div><div class="k">Transit days</div><div class="v">0</div></div>
       </div>
     </section>
 
@@ -287,7 +291,7 @@
           <div class="day">
             <div class="date"><div class="dn">Thu</div><div class="dd">9</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv move">→ ~35 km · ~45 min · Bristol Airport to Wells</div><h4>Land &amp; drive to Wells</h4><p>Touch down Bristol 20:55, collect the car, ~40 min to Wells. Arrival night — settle in.</p>
-              </div></div>
+              </div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Fri</div><div class="dd">10</div><div class="mo">Jul</div></div>
@@ -361,8 +365,8 @@
           </div>
           <div class="day">
             <div class="date"><div class="dn">Thu</div><div class="dd">16</div><div class="mo">Jul</div></div>
-            <div class="body"><div class="drv">↻ ~80 km · ~2 h round trip (eve return)</div><h4>Porthcurno, Logan Rock &amp; the Minack Theatre</h4><p>Land's End peninsula: turquoise Porthcurno beach, then the coast-path walk up to <b>Logan Rock</b> at Treen (a cliff headland with a famous rocking boulder) and pretty Lamorna Cove. Then an <b>evening performance at the Minack</b> — open-air theatre carved into the cliff.</p>
-              <div class="tags"><span class="tag hike">▲ Logan Rock coast path</span><span class="tag book">⚑ Book the show</span><span class="tag uniq">★ Minack clifftop theatre</span></div></div>
+            <div class="body"><div class="drv">↻ ~80 km · ~2 h round trip</div><h4>Porthcurno, Logan Rock &amp; Land's End</h4><p>Land's End peninsula: turquoise Porthcurno beach and the <b>Telegraph Museum</b> in the clifftop WWII tunnels (where the world's undersea cables came ashore — kid-friendly and genuinely odd), then the coast-path walk to <b>Logan Rock</b> at Treen and on to <b>Land's End</b> itself, the westernmost tip of England.</p>
+              <div class="tags"><span class="tag hike">▲ Logan Rock coast path</span><span class="tag uniq">★ Cable tunnels + Land's End</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Fri</div><div class="dd">17</div><div class="mo">Jul</div></div>
@@ -427,7 +431,7 @@
           <div class="day">
             <div class="date"><div class="dn">Sat</div><div class="dd">25</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv move">→ ~120 km · ~2.25 h · base move via Branscombe</div><h4>Branscombe &amp; the Hooken Cliffs → Lyme</h4><p>Drop to the coast at <b>Branscombe</b> — a thatched NT village and beach with the <b>Hooken Cliffs</b> undercliff walk, a dramatic 1790s landslip jumble of pinnacles. Then on to the Jurassic base and an afternoon at <b>Lyme Regis</b> — the Cobb and the seafront.</p>
-              <div class="tags"><span class="tag hike">▲ Hooken undercliff</span></div></div></div>
+              <div class="tags"><span class="tag hike">▲ Hooken undercliff</span></div></div>
           </div>
         </div>
       </section>
@@ -505,21 +509,12 @@
           <thead><tr><th>What</th><th>For</th><th>Timing</th></tr></thead>
           <tbody>
             <tr><td><b>Lundy — MS <em>Oldenburg</em></b><br><span class="when">Sailing days vary week to week</span></td><td>Day 5 · 13 Jul</td><td><span class="deadline">Check calendar first</span>, then book</td></tr>
-            <tr><td><b>Minack Theatre</b><br><span class="when">Specific evening performance</span></td><td>Day 8 · 16 Jul</td><td><span class="deadline">Book early</span> — sells out</td></tr>
             <tr><td><b>St Michael's Mount</b><br><span class="when">Plan causeway-walk vs boat</span></td><td>Day 10 · 18 Jul</td><td>Check tide times</td></tr>
             <tr><td><b>Eden Project</b><br><span class="when">Timed entry</span></td><td>Day 12 · 20 Jul</td><td><span class="deadline">Book now</span> — peak day</td></tr>
             <tr><td><b>Charmouth fossil walk</b><br><span class="when">Guided, tide-dependent</span></td><td>Day 18 · 26 Jul</td><td><span class="deadline">Book dated walk</span> + tide</td></tr>
             <tr><td><b>Paultons Park</b><br><span class="when">Dated online tickets</span></td><td>Day 21 · 29 Jul</td><td><span class="deadline">Book online</span> — capacity-capped</td></tr>
           </tbody>
         </table>
-
-        <div class="mapcta">
-          <div class="txt">
-            <h3>Route map</h3>
-            <p>Bases, hikes and sights as a 3-layer Google My Maps — same KML workflow as Romania. Paste your published map link into the button below.</p>
-          </div>
-          <a href="#" id="maplink" target="_blank" rel="noopener">Open map →</a>
-        </div>
       </section>
 
     </div><!-- /wrap -->
