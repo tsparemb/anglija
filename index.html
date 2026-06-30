@@ -169,6 +169,20 @@
   .tag.book{background:var(--ochre-soft);color:#8a5a12;font-weight:700}
   .tag.uniq{background:#e9e2ef;color:#5e417a}
 
+  /* proper hikes — visually distinct from descriptive tags */
+  .hike-line{margin-top:11px;padding:10px 13px;background:#eaf3e4;border:1px solid #cfe3c2;border-left:4px solid #3d6b2a;border-radius:8px}
+  .hike-line .hk-top{display:flex;flex-wrap:wrap;align-items:center;gap:7px 10px}
+  .hike-line .hk-ico{color:#3d6b2a;font-weight:700;font-size:.82rem;line-height:1}
+  .hike-line .hk-name{font-family:'Fraunces';font-weight:600;font-size:.92rem;color:#274d18;line-height:1.2}
+  .hike-line .hk-stats{display:flex;flex-wrap:wrap;gap:6px;margin-left:auto}
+  .hike-line .hk-stats span{font-family:'Space Mono';font-size:.64rem;font-weight:700;letter-spacing:.02em;color:#3d6b2a;background:#fff;border:1px solid #cfe3c2;border-radius:5px;padding:3px 8px}
+  .hike-line .hk-desc{font-size:.85rem;color:#37502c;margin-top:7px;line-height:1.5}
+  .hike-line .hk-start{display:inline-block;margin-top:8px;font-family:'Space Mono';font-size:.66rem;font-weight:700;color:#2f6b34;text-decoration:none;border-bottom:1px dashed #7aa86a}
+  .hike-line .hk-start:hover{color:#1f4d22;border-bottom-style:solid}
+  .hike-line .hk-opt{font-family:'Space Mono';font-size:.55rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#fff;background:#5a8a64;padding:2px 7px;border-radius:4px;line-height:1.5;align-self:center}
+  .hike-line .hk-opt.long{background:#274d18}
+  @media(max-width:520px){.hike-line .hk-stats{margin-left:0;width:100%}}
+
   /* ---------- bookings table ---------- */
   .bookings{padding:46px 0 20px;scroll-margin-top:90px}
   .bookings h2{font-family:'Fraunces';font-size:1.9rem;font-weight:600;letter-spacing:-.01em}
@@ -204,7 +218,7 @@
   <div class="brand">South-West England<span>9–30 JUL 2026 · 21 NIGHTS</span></div>
 </div>
 <div class="mchips">
-  <a href="#b1"><span class="dot" style="background:var(--b1)"></span>Wells</a>
+  <a href="#b1"><span class="dot" style="background:var(--b1)"></span>Polsham</a>
   <a href="#b2"><span class="dot" style="background:var(--b2)"></span>Combe Martin</a>
   <a href="#b3"><span class="dot" style="background:var(--b3)"></span>Camborne</a>
   <a href="#b4"><span class="dot" style="background:var(--b4)"></span>Exminster</a>
@@ -219,7 +233,7 @@
   <aside class="nav">
     <div class="brand">South-West<br>England<span>9–30 July 2026</span></div>
     <ul class="nav-list">
-      <li><a href="#b1" data-sec="b1"><span class="dot" style="background:var(--b1)"></span><span class="nm">Wells<small>9–11 Jul · Somerset</small></span><span class="nt">2n</span></a></li>
+      <li><a href="#b1" data-sec="b1"><span class="dot" style="background:var(--b1)"></span><span class="nm">Polsham<small>9–11 Jul · nr Wells</small></span><span class="nt">2n</span></a></li>
       <li><a href="#b2" data-sec="b2"><span class="dot" style="background:var(--b2)"></span><span class="nm">Combe Martin<small>11–14 Jul · Exmoor</small></span><span class="nt">3n</span></a></li>
       <li><a href="#b3" data-sec="b3"><span class="dot" style="background:var(--b3)"></span><span class="nm">Camborne<small>14–20 Jul · Cornwall</small></span><span class="nt">6n</span></a></li>
       <li><a href="#b4" data-sec="b4"><span class="dot" style="background:var(--b4)"></span><span class="nm">Exminster<small>20–25 Jul · Dartmoor</small></span><span class="nt">5n</span></a></li>
@@ -275,7 +289,7 @@
       <section class="base reveal" id="b1" style="--bc:var(--b1)">
         <div class="base-head">
           <div class="num">1</div>
-          <div class="ht"><div class="where">Somerset</div><h2>Wells</h2></div>
+          <div class="ht"><div class="where">Somerset · near Wells</div><h2>Polsham</h2></div>
           <div class="nights">2 nights</div>
         </div>
         <div class="stay">
@@ -285,7 +299,7 @@
           <div class="field"><div class="l">Cost</div><div class="d">€220 · €110/night</div></div>
           <div class="field"><div class="l">Listing</div><div class="d"><a href="https://www.airbnb.com/rooms/47284274" target="_blank" rel="noopener">View ↗</a></div></div>
           <div class="status ok">✓ Confirmed</div>
-          <div class="cancel">Free cancellation until <b>4 Jul, 3 PM</b></div>
+          <div class="cancel">Free cancellation until <b>4 Jul, 3 PM</b> · Polsham, ~3 km S of Wells</div>
         </div>
         <div class="days">
           <div class="day">
@@ -295,13 +309,13 @@
           </div>
           <div class="day">
             <div class="date"><div class="dn">Fri</div><div class="dd">10</div><div class="mo">Jul</div></div>
-            <div class="body"><div class="drv">↻ ~55 km · ~1.5 h round trip</div><h4>Cheddar Gorge, Ebbor Gorge &amp; Glastonbury</h4><p>Cliff-top gorge walk via Jacob's Ladder (~270 steps) and the ridge loop high above the deepest gorge in England, then <b>Ebbor Gorge</b> — a wilder, quieter NNR with a proper rocky woodland scramble. Afternoon in <b>Glastonbury</b>: the ruined Abbey and the famously eccentric Avalon town.</p>
-              <div class="tags"><span class="tag hike">▲ Two gorge walks</span><span class="tag uniq">★ Deepest gorge + Avalon</span></div></div>
+            <div class="body"><div class="drv">↻ ~30 km · ~1 h round trip</div><h4>Glastonbury &amp; Wells</h4><p>Climb <b>Glastonbury Tor</b> — the conical hill crowned by a lone medieval tower, heart of the Avalon / King Arthur legend — then the ruined <b>Glastonbury Abbey</b> and the eccentric Avalon high street. Afternoon in <b>Wells</b>, England's smallest city: the medieval Cathedral and Vicars' Close, the oldest continuously inhabited street in Europe.</p>
+              <div class="tags"><span class="tag uniq">★ Avalon + Wells Cathedral</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Sat</div><div class="dd">11</div><div class="mo">Jul</div></div>
-            <div class="body"><div class="drv move">→ ~145 km · ~2.25 h · base move via Glastonbury</div><h4>Wells Cathedral → Combe Martin</h4><p>Morning at the cathedral &amp; Vicars' Close (oldest inhabited street in Europe), then drive to Exmoor with <b>Glastonbury Tor</b> as the en-route climb.</p>
-              <div class="tags"><span class="tag hike">▲ Glastonbury Tor</span></div></div>
+            <div class="body"><div class="drv move">→ ~140 km · ~3.5 h · Exmoor coast road</div><h4>Exmoor coast → Combe Martin</h4><p>The scenic A39 across Exmoor. Main stop is <b>Dunster</b> — a complete medieval village with a castle, working watermill and the octagonal Yarn Market — then the tiny historic harbour of <b>Porlock Weir</b>; the thatched NT hamlet of <b>Selworthy</b> is a quick optional stop on the way past. The road then tackles the famously steep Porlock Hill (1-in-4) — or take the gentler, scenic <b>Porlock Toll Road</b> — before the run on to Combe Martin.</p>
+              <div class="tags"><span class="tag uniq">★ Medieval village + harbour</span></div></div>
           </div>
         </div>
       </section>
@@ -325,8 +339,8 @@
         <div class="days">
           <div class="day">
             <div class="date"><div class="dn">Sun</div><div class="dd">12</div><div class="mo">Jul</div></div>
-            <div class="body"><div class="drv">↻ ~50 km · ~1.5 h round trip</div><h4>Great Hangman, Lynton, Lynmouth &amp; Valley of Rocks</h4><p>Start on the doorstep: <b>Great Hangman</b>, the highest sea cliff in England (318m) and the high point of the whole South West Coast Path — a real morning climb straight from Combe Martin. Then the 1890 water-powered cliff railway at Lynton, the Valley of Rocks (feral goats, cliffs) and the Watersmeet river-gorge walk.</p>
-              <div class="tags"><span class="tag hike">▲ Great Hangman + Watersmeet</span><span class="tag uniq">★ Highest sea cliff in England</span></div></div>
+            <div class="body"><div class="drv">↻ ~30 km · ~45 min round trip</div><h4>Great Hangman, Lynton &amp; Valley of Rocks</h4><p>Morning: the <b>Great Hangman</b> circular from the doorstep — ~4.5 miles / ~3 h up to the 318 m summit, the highest sea cliff in England, with huge Bristol Channel views. Afternoon east to <b>Lynton &amp; Lynmouth</b> for the 1890 water-powered cliff railway, then the <b>Valley of Rocks</b> — a dramatic dry valley with feral goats, a short stroll from Lynton.</p>
+              <div class="hike-line"><div class="hk-top"><span class="hk-ico">▲</span><span class="hk-name">Great Hangman circular</span><span class="hk-stats"><span>~7 km</span><span>~3 h</span><span>↑ 318 m</span></span></div><p class="hk-desc">Climbs straight from the doorstep onto the highest sea cliff in England, with the Bristol Channel falling away below and the Welsh coast hazy across the water. A big, exposed Atlantic walk you simply can't do anywhere inland.</p><a class="hk-start" href="https://www.google.com/maps?q=51.20698,-4.03742" target="_blank" rel="noopener">📍 Start · 51.20698, -4.03742 — Kiln Car Park, Combe Martin</a></div><div class="tags"><span class="tag uniq">★ Highest sea cliff + cliff railway</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Mon</div><div class="dd">13</div><div class="mo">Jul</div></div>
@@ -361,7 +375,7 @@
           <div class="day">
             <div class="date"><div class="dn">Wed</div><div class="dd">15</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv">↻ ~70 km · ~2 h round trip</div><h4>St Ives &amp; the St Agnes coast</h4><p>Morning in St Ives — harbour, Tate, Porthmeor beach. Afternoon at <b>St Agnes</b>: the Chapel Porth–Wheal Coates engine-house coast path and a short climb up <b>St Agnes Beacon</b> for a 360° panorama. Sunset option: <b>Carn Brea</b>, the hillfort and monument on the doorstep right above Camborne.</p>
-              <div class="tags"><span class="tag hike">▲ St Agnes Beacon + Carn Brea</span><span class="tag">Beach + town</span></div></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-ico">▲</span><span class="hk-name">Chapel Porth · Wheal Coates · St Agnes Beacon</span><span class="hk-stats"><span>~5 km</span><span>~2 h</span><span>↑ 192 m</span></span></div><p class="hk-desc">Past the Wheal Coates engine house clinging to the cliff edge — the postcard image of Cornish tin mining — then up onto the Beacon for a 360° sweep of the whole north coast. Heather, ruins and open sea, and gentle enough underfoot for the kids.</p><a class="hk-start" href="https://www.google.com/maps?q=50.30009,-5.23432" target="_blank" rel="noopener">📍 Start · 50.30009, -5.23432 — NT Chapel Porth</a></div><div class="tags"><span class="tag">Beach + town</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Thu</div><div class="dd">16</div><div class="mo">Jul</div></div>
@@ -371,7 +385,8 @@
           <div class="day">
             <div class="date"><div class="dn">Fri</div><div class="dd">17</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv">↻ ~90 km · ~2.5 h round trip</div><h4>The Lizard &amp; Kynance Cove</h4><p>Kynance Cove — one of England's most beautiful beaches — plus Lizard Point, the mainland's southernmost tip and a fine cliff walk.</p>
-              <div class="tags"><span class="tag">Beach + cove</span><span class="tag uniq">★ Kynance Cove</span></div></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-opt">Shorter</span><span class="hk-ico">▲</span><span class="hk-name">Kynance Cove → Lizard Point cliff path</span><span class="hk-stats"><span>~5 km</span><span>~2 h</span></span></div><p class="hk-desc">A serpentine-rock coast path above turquoise water, from the cove the guidebooks fight over down to mainland Britain's southernmost tip. Short and varied, with rock stacks, sea caves and hidden inlets most of the way.</p><a class="hk-start" href="https://www.google.com/maps?q=49.97472,-5.22512" target="_blank" rel="noopener">📍 Start · 49.97472, -5.22512 — NT Kynance Cove car park</a></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-opt long">Full circular</span><span class="hk-ico">▲</span><span class="hk-name">Lizard village loop — Kynance · Lizard Point · Cadgwith</span><span class="hk-stats"><span>~10–13 km</span><span>~3.5–4 h</span><span>↑ 254 m</span></span></div><p class="hk-desc">The full peninsula circuit and one of England's finest coastal loops: serpentine cliffs and Kynance Cove, the southernmost point, the working fishing village of Cadgwith, Church Cove and the Marconi wireless huts where the first over-the-horizon radio signal was received. Mostly easy going with cafés and a pub en route; shortcut back at Housel Bay to keep it nearer 10 km.</p><a class="hk-start" href="https://www.google.com/maps?q=49.96090,-5.20427" target="_blank" rel="noopener">📍 Start · 49.96090, -5.20427 — NT Lizard Point car park (or the free village green car park if it's busy)</a></div><div class="tags"><span class="tag">Beach + cove</span><span class="tag uniq">★ Kynance Cove</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Sat</div><div class="dd">18</div><div class="mo">Jul</div></div>
@@ -381,7 +396,7 @@
           <div class="day">
             <div class="date"><div class="dn">Sun</div><div class="dd">19</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv">↻ ~70 km · ~2 h round trip</div><h4>Botallack, Geevor &amp; Cape Cornwall</h4><p>UNESCO tin-mining coast — the <em>Poldark</em> engine houses on the cliff edge, the Geevor mine tour, and the coast path on to <b>Cape Cornwall</b>, the only "cape" in England. Finish at Sennen Cove or Land's End. A strong cliff-walking day.</p>
-              <div class="tags"><span class="tag hike">▲ Mining-coast cliff path</span><span class="tag uniq">★ Cliffside engine houses</span></div></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-ico">▲</span><span class="hk-name">Botallack → Cape Cornwall mining coast path</span><span class="hk-stats"><span>~6 km</span><span>~2.5 h</span></span></div><p class="hk-desc">The most cinematic stretch of the whole tin coast — ruined engine houses pinned to the cliff above crashing Atlantic surf (the <em>Poldark</em> coast) — out to Cape Cornwall, the only headland in England called a cape. Industrial heritage and sea drama in a single walk.</p><a class="hk-start" href="https://www.google.com/maps?q=50.14072,-5.68946" target="_blank" rel="noopener">📍 Start · 50.14072, -5.68946 — NT Botallack</a></div><div class="tags"><span class="tag uniq">★ Cliffside engine houses</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Mon</div><div class="dd">20</div><div class="mo">Jul</div></div>
@@ -411,7 +426,8 @@
           <div class="day">
             <div class="date"><div class="dn">Tue</div><div class="dd">21</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv">↻ ~65 km · ~1.5 h round trip</div><h4>Dartmoor tors — Haytor &amp; Hound Tor</h4><p>The headline elevation day: granite scrambles across open moor, wild ponies, prehistoric stone rows nearby. The one landscape with no Slovenian equivalent.</p>
-              <div class="tags"><span class="tag hike">▲ Tor scramble</span><span class="tag uniq">★ Granite moorland</span></div></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-opt">Shorter</span><span class="hk-ico">▲</span><span class="hk-name">Haytor → Hound Tor (direct loop)</span><span class="hk-stats"><span>~7 km</span><span>~3 h</span></span></div><p class="hk-desc">Open Dartmoor at its best: granite tors to scramble, half-wild ponies grazing the heath, and the stone footprints of a deserted medieval village. A vast, big-sky moorland with no Slovenian equivalent — and the tors are made for kids to climb.</p><a class="hk-start" href="https://www.google.com/maps?q=50.58092,-3.74527" target="_blank" rel="noopener">📍 Start · 50.58092, -3.74527 — Haytor car park</a></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-opt long">Full loop</span><span class="hk-ico">▲</span><span class="hk-name">Haytor full loop — tramway, clapper bridge & Hound Tor village</span><span class="hk-stats"><span>~10 km</span><span>~3.5 h</span><span>↑ 435 m</span></span></div><p class="hk-desc">The complete circuit: Haytor and its quarry (with a flooded pool you can swim in), the 1820s granite tramway, Smallacombe Rocks, a drop into unexpectedly lush ancient woodland, a clapper bridge over Becka Brook, the Hound Tor deserted medieval village and Greator Rocks. Climbs come in short bursts with flat tramway between — varied, never a slog.</p><a class="hk-start" href="https://www.google.com/maps?q=50.58092,-3.74527" target="_blank" rel="noopener">📍 Start · 50.58092, -3.74527 — Haytor car park (same start)</a></div><div class="tags"><span class="tag uniq">★ Granite moorland</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Wed</div><div class="dd">22</div><div class="mo">Jul</div></div>
@@ -426,12 +442,12 @@
           <div class="day">
             <div class="date"><div class="dn">Fri</div><div class="dd">24</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv">↻ ~90 km · ~2 h round trip</div><h4>Lydford Gorge &amp; Brent Tor</h4><p>NT waterfall trail and the Devil's Cauldron whirlpool — a dramatic gorge hike, very different from the open moor. Then the short steep climb to <b>Brent Tor</b>, a tiny medieval church perched on a volcanic plug with views right across Dartmoor and west into Cornwall.</p>
-              <div class="tags"><span class="tag hike">▲ Gorge trail + Brent Tor</span><span class="tag uniq">★ Church on a volcanic plug</span></div></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-ico">▲</span><span class="hk-name">Lydford Gorge loop + Brent Tor climb</span><span class="hk-stats"><span>~5 km</span><span>~2 h</span></span></div><p class="hk-desc">A deep, mossy river gorge with the 30 m White Lady waterfall and the swirling Devil's Cauldron pothole, then a short sharp pull up to a tiny church marooned on a volcanic plug. Shady and cool — the walk to save for a hot day.</p><a class="hk-start" href="https://www.google.com/maps?q=50.64149,-4.10984" target="_blank" rel="noopener">📍 Start · 50.64149, -4.10984 — NT Lydford Gorge</a></div><div class="tags"><span class="tag uniq">★ Church on a volcanic plug</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Sat</div><div class="dd">25</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv move">→ ~120 km · ~2.25 h · base move via Branscombe</div><h4>Branscombe &amp; the Hooken Cliffs → Lyme</h4><p>Drop to the coast at <b>Branscombe</b> — a thatched NT village and beach with the <b>Hooken Cliffs</b> undercliff walk, a dramatic 1790s landslip jumble of pinnacles. Then on to the Jurassic base and an afternoon at <b>Lyme Regis</b> — the Cobb and the seafront.</p>
-              <div class="tags"><span class="tag hike">▲ Hooken undercliff</span></div></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-ico">▲</span><span class="hk-name">Branscombe → Hooken undercliff loop</span><span class="hk-stats"><span>~5 km</span><span>~2 h</span></span></div><p class="hk-desc">Drops into a tumbled world of chalk pinnacles and overgrown terraces left when a slab of cliff slid towards the sea in 1790. A genuinely strange, jungly stretch of coast, bookended by a thatched village and a quiet pebble beach.</p><a class="hk-start" href="https://www.google.com/maps?q=50.68798,-3.12363" target="_blank" rel="noopener">📍 Start · 50.68798, -3.12363 — Branscombe Beach car park</a></div></div>
           </div>
         </div>
       </section>
@@ -461,12 +477,13 @@
           <div class="day">
             <div class="date"><div class="dn">Mon</div><div class="dd">27</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv">↻ ~65 km · ~1.75 h round trip</div><h4>Golden Cap, West Bay &amp; Burton Bradstock</h4><p>Climb <b>Golden Cap</b> — the highest point on England's south coast — then West Bay's golden cliffs (the <em>Broadchurch</em> coast). On to <b>Burton Bradstock</b>, where the honey-coloured Hive Beach cliffs meet the start of the 18-mile Chesil Beach.</p>
-              <div class="tags"><span class="tag hike">▲ Golden Cap ascent</span><span class="tag uniq">★ Jurassic cliffs + Chesil</span></div></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-opt">Shorter</span><span class="hk-ico">▲</span><span class="hk-name">Golden Cap from Seatown</span><span class="hk-stats"><span>~4 km</span><span>~2 h</span><span>↑ 191 m</span></span></div><p class="hk-desc">A grassy climb to the highest point on England's south coast, with the full sweep of the Jurassic Coast below — the golden sandstone cliffs, the long shingle of Chesil Beach, Portland on the horizon. Short and steady, with a proper summit payoff.</p><a class="hk-start" href="https://www.google.com/maps?q=50.72250,-2.82261" target="_blank" rel="noopener">📍 Start · 50.72250, -2.82261 — Seatown car park</a></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-opt long">Full circular</span><span class="hk-ico">▲</span><span class="hk-name">Golden Cap · St Gabriel's · Stonebarrow circular</span><span class="hk-stats"><span>~10 km</span><span>~3.5 h</span><span>↑ 191 m</span></span></div><p class="hk-desc">Over Golden Cap, then down to the ruined chapel of St Gabriel's — remains of a lost smuggling hamlet — and around the estate via Stonebarrow and the shaded woodland of Langdon Hill before returning to Seatown. One steep pull up the Cap, then varied and gentle, with the Anchor Inn on the beach at the finish. Note: this is most of the day, so you'd likely trade West Bay &amp; Burton Bradstock for it.</p><a class="hk-start" href="https://www.google.com/maps?q=50.72250,-2.82261" target="_blank" rel="noopener">📍 Start · 50.72250, -2.82261 — Seatown car park (same start)</a></div><div class="tags"><span class="tag uniq">★ Jurassic cliffs + Chesil</span></div></div>
           </div>
           <div class="day">
             <div class="date"><div class="dn">Tue</div><div class="dd">28</div><div class="mo">Jul</div></div>
             <div class="body"><div class="drv move">→ ~140 km · ~3 h · via Durdle Door &amp; Corfe</div><h4>Durdle Door, Lulworth &amp; Corfe Castle → Cranborne</h4><p>The iconic eastern Jurassic Coast: the cliff path linking <b>Durdle Door</b>, <b>Lulworth Cove</b>, Stair Hole and the Fossil Forest. Then a quick stop at <b>Corfe Castle</b> — the dramatic ruined hilltop fortress on the Isle of Purbeck — on the way inland to Cranborne.</p>
-              <div class="tags"><span class="tag hike">▲ Durdle Door–Lulworth path</span><span class="tag uniq">★ Durdle Door + Corfe Castle</span></div></div>
+              <div class="hike-line"><div class="hk-top"><span class="hk-ico">▲</span><span class="hk-name">Lulworth Cove → Durdle Door coast path</span><span class="hk-stats"><span>~3 km</span><span>~1.5 h</span><span>steep steps</span></span></div><p class="hk-desc">Short but spectacular: up over the chalk ridge from the near-perfect circle of Lulworth Cove to look down on Durdle Door, the limestone arch standing free in the sea. Steep steps in and out, but it's the most famous view on the coast for the effort.</p><a class="hk-start" href="https://www.google.com/maps?q=50.61970,-2.25298" target="_blank" rel="noopener">📍 Start · 50.61970, -2.25298 — Lulworth Cove car park</a></div><div class="tags"><span class="tag uniq">★ Durdle Door + Corfe Castle</span></div></div>
           </div>
         </div>
       </section>
